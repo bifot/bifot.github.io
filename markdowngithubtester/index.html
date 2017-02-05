@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0">
+  <title>Markdown Github Tester</title>
+  <link href="build/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title">Markdown Github Tester</h1>
+  <div class="container">
+  	<div class="editor">
+    	<textarea class="editor__textarea" v-model="input"></textarea>
+    	<span class="editor__status"></span>
+    	<button class="editor__copy">Copy Textarea</button>
+    </div>
+
+    <div class="show" v-html="input | marked"></div>
+  </div>
+
+  <div class="footer">
+    <p class="footer__copyright">
+      Copyright © 2017 <a href="http://bifot.ru/">Mikhail Semin</a>.<br>
+      <a href="https://github.com/bifot/bifot.github.io/markdowngithubtester">Open source</a>.
+    </p>
+  </div>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+  <script src="build/js/marked.min.js"></script>
+  <script src="build/js/vue.js"></script>
+  <script src="build/js/app.js"></script>
+  <script src="build/js/common.js"></script>
+</body>
+
+</html>

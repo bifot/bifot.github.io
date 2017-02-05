@@ -1,0 +1,31 @@
+{
+  "name": "markdown-github-tester",
+  "version": "1.0.0",
+  "description": "Test your readme before commit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifot/markdowngithubtester.git"
+  },
+  "keywords": [
+    "github",
+    "readme",
+    "test",
+    "vue"
+  ],
+  "author": "Mikhail Semin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bifot/markdowngithubtester/issues"
+  },
+  "homepage": "https://github.com/bifot/markdowngithubtester#readme",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-cssnano": "2.1.2",
+    "gulp-sass": "3.1.0",
+    "gulp-uglify": "2.0.1"
+  }
+}
