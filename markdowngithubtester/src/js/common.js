@@ -17,8 +17,8 @@ function fadeIn(el, display){
   })();
 }
 
-if (window.innerWidth > 768) {
-  document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function() {
+  if (window.innerWidth > 768) {
     if (window.pageYOffset > (editorTextarea.clientHeight + 100)) {
       Object.assign(show.style, {
         margin: '0 auto',
@@ -30,8 +30,8 @@ if (window.innerWidth > 768) {
         margin: '0 0 30px 40.5%'
       });
     }
-  });
-}
+  }
+});
 
 editorCopy.addEventListener('click', function(event) {
   editorTextarea.select();
